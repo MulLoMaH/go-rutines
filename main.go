@@ -2,6 +2,7 @@ package main
 
 import (
 	"1/post"
+	"1/post/feature1"
 	"context"
 	"fmt"
 	"sync"
@@ -28,6 +29,7 @@ func main() {
 		cancel()
 	}()
 
+	feature1.Feature1()
 	wg.Wait()
 
 }
